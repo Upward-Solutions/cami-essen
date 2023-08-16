@@ -17,6 +17,15 @@ const config: Config = {
       tablet: '834px',
       desktop: '1024px',
     },
+    colors: {
+      background: '#080808',
+      headlines: '#E1E1E1',
+      text: '#B1B1B1',
+      'primary-hover': '#A71140',
+      'primary-pressed': '#6F0B2B',
+      transparent: 'transparent',
+      primary: '#e41657',
+    },
   },
   plugins: [],
 };
