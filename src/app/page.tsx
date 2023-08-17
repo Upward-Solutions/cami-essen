@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <main className='relative h-screen overflow-hidden'>
       <div className='absolute z-10 flex items-center justify-center w-full h-full mt-6'>
-        <div className='flex flex-col items-center gap-8 desktop:max-w-3xl'>
+        <div className='flex flex-col items-center gap-8 p-4 tablet:p-0 tablet:max-w-3xl'>
           <h1 className='text-4xl font-bold text-headlines'>
             Las mejores ollas essen
           </h1>
@@ -18,7 +18,7 @@ export default function HomePage() {
             volutpat. Praesent eu dolor non lacus ultricies mollis et non
             sapien.
           </p>
-          <div className='grid w-full grid-cols-2 gap-4'>
+          <div className='grid w-full grid-cols-1 gap-4 mobile:grid-cols-2'>
             <Button variant='secondary'>Formar parte</Button>
             <Button variant='primary'>Quiero mi Essen</Button>
           </div>
