@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -17,9 +18,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang='es'>
       <body className={`${inter.className} relative`}>
-        <header className='absolute z-10 top-0 bg-headlines w-full'>
-          <span>Cami Essen placeholder</span>
-        </header>
+        <Navbar />
         {children}
         <footer className='absolute z-10 bottom-0 bg-headlines w-full'>
           Cami essen 2023
