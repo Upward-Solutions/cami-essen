@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='absolute z-10 bottom-0 bg-headlines w-full'>
-      Cami essen 2023
+    <footer className='absolute bottom-0 z-10 flex items-center justify-center w-full bg-background text-text'>
+      <span>Cami essen 2023</span>
     </footer>
   );
 };
