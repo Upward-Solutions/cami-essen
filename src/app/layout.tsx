@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,9 +21,7 @@ export default function RootLayout({ children }: Props) {
       <body className={`${inter.className} relative`}>
         <Navbar />
         {children}
-        <footer className='absolute z-10 bottom-0 bg-headlines w-full'>
-          Cami essen 2023
-        </footer>
+        <Footer />
       </body>
     </html>
   );
