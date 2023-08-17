@@ -24,11 +24,14 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className='absolute w-full h-full bg-background/75'></div>
-      <img
-        src='/background.webp'
-        alt='Cocina con distintos utencilios y sartén essen'
-      />
+      <div className='relative w-full h-full'>
+        <div className='absolute w-full h-full bg-background/75'></div>
+        <img
+          src='/background.webp'
+          alt='Cocina con distintos utencilios y sartén essen'
+          className='absolute object-cover w-full h-full -z-10'
+        />
+      </div>
     </main>
   );
 }
