@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <main className='relative h-screen overflow-hidden'>
       <div className='absolute z-10 flex items-center justify-center w-full h-full mt-6'>
-        <div className='flex flex-col items-center desktop:max-w-3xl'>
+        <div className='flex flex-col items-center gap-8 desktop:max-w-3xl'>
           <h1 className='text-4xl font-bold text-headlines'>
             Las mejores ollas essen
           </h1>
