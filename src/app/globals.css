@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    @apply ease-in-out duration-150;
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary hover:bg-primary-hover active:bg-primary-pressed border-transparent
+    }
+    
+    .btn-secondary {
+        @apply border-headlines hover:bg-background/25 active:bg-background/50
+    }
+}
