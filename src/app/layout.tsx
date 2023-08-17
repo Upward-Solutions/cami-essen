@@ -15,8 +15,23 @@ interface Props {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='es'>
+      <body className={`${inter.className} relative`}>
+        <header className='absolute z-10 top-0 bg-headlines w-full'>
+          <span>Cami Essen placeholder</span>
+        </header>
+        {children}
+        <footer className='absolute z-10 bottom-0 bg-headlines w-full'>
+          Cami essen 2023
+        </footer>
+      </body>
     </html>
   );
 }
+
+/*
+
+        
+        
+
+*/
