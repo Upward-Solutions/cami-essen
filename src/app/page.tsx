@@ -1,4 +1,46 @@
 import Button from '@/components/Button/Button';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Cami - Essen e-commerce',
+  description: 'Las mejores ollas essen, al mejor precio',
+  generator: 'Next.js',
+  applicationName: 'Next.js',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Olla', 'Essen', 'Ollas', 'Sartenes'],
+  authors: [{ name: 'Camila' }],
+  colorScheme: 'light',
+  creator: 'Upward Solutions',
+  publisher: 'Upward Solutions',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Cami - Essen e-commerce',
+    description: 'Las mejores ollas essen, al mejor precio',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cami - Essen e-commerce',
+    description: 'Las mejores ollas essen, al mejor precio',
+  },
+};
 
 export default function HomePage() {
   return (
