@@ -29,4 +29,21 @@ describe('variant prop', () => {
   });
 });
 
+describe('url prop', () => {
+  test('Applies correctly the href property when dynamic', () => {
+    const button = render(<Button url={dynamicPath}>{buttonLabel}</Button>);
+
+    expect(button.container.firstChild).toHaveProperty('href', dynamicUrl);
+  });
+
+  test('Applies correctly the href property when absolute', () => {
+    const button = render(<Button url={absoluteUrl}>{buttonLabel}</Button>);
+
+    expect(button.container.firstChild).toHaveProperty('href', absoluteUrl);
+  });
+});
+
 const buttonLabel = 'Test';
+const dynamicPath = '/test';
+const dynamicUrl = `http://localhost${dynamicPath}`;
+const absoluteUrl = 'https://github.com/Upward-Solutions';
