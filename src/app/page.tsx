@@ -62,7 +62,9 @@ export default function HomePage() {
           </p>
           <div className='grid w-full grid-cols-1 gap-4 mobile:grid-cols-2'>
             <Button variant='secondary'>Formar parte</Button>
-            <Button variant='primary'>Quiero mi Essen</Button>
+            <Button variant='primary' url='/compra/lineas'>
+              Quiero mi Essen
+            </Button>
           </div>
         </div>
       </div>
