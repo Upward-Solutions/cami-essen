@@ -12,6 +12,6 @@
     }
     
     .btn-secondary {
-        @apply border-headlines hover:bg-background/25 active:bg-background/50
+        @apply border-card-background hover:bg-background/25 active:bg-background/50
     }
 }

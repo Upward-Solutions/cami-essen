@@ -20,7 +20,7 @@ const Button = ({ children, variant = 'primary', url }: Props) => {
 
     return isAbsolute ? (
       <a
-        className={`${variants[variant]} text-center px-8 border py-4 rounded text-headlines font-bold`}
+        className={`${variants[variant]} text-center px-8 border py-4 rounded text-card-background font-bold`}
         href={url}
       >
         {NEXT_PUBLIC_DOMAIN}
@@ -28,7 +28,7 @@ const Button = ({ children, variant = 'primary', url }: Props) => {
       </a>
     ) : (
       <Link
-        className={`${variants[variant]} text-center px-8 border py-4 rounded text-headlines font-bold`}
+        className={`${variants[variant]} text-center px-8 border py-4 rounded text-card-background font-bold`}
         href={url}
       >
         {children}
@@ -37,7 +37,7 @@ const Button = ({ children, variant = 'primary', url }: Props) => {
   } else {
     return (
       <button
-        className={`${variants[variant]} px-8 border py-4 rounded text-headlines font-bold`}
+        className={`${variants[variant]} px-8 border py-4 rounded text-card-background font-bold`}
       >
         {children}
       </button>

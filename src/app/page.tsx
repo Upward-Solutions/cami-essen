@@ -47,7 +47,7 @@ export default function HomePage() {
     <main className='relative h-screen overflow-hidden'>
       <div className='absolute z-10 flex items-center justify-center w-full h-full mt-6'>
         <div className='flex flex-col items-center gap-8 p-4 tablet:p-0 tablet:max-w-3xl'>
-          <h1 className='text-4xl font-bold text-headlines'>
+          <h1 className='text-4xl font-bold text-card-background'>
             Las mejores ollas essen
           </h1>
           <p className='text-text'>
@@ -69,7 +69,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className='relative w-full h-full'>
-        <div className='absolute w-full h-full bg-background/75'></div>
+        <div className='absolute w-full h-full bg-[#000000]/75'></div>
         <img
           src='/background.webp'
           alt='Cocina con distintos utencilios y sartén essen'
