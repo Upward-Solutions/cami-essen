@@ -31,8 +31,10 @@ export default async function ProductLinesPage() {
   return (
     <main className='h-fit min-h-screen overflow-hidden bg-background'>
       <div className='flex justify-center w-full h-full my-16'>
-        <div className='flex flex-col tablet:max-w-3xl w-full'>
-          <h1 className='mt-6'>Explorá nuestras lineas</h1>
+        <div className='flex flex-col tablet:max-w-3xl w-full gap-4'>
+          <h1 className='text-headlines font-semibold text-xl'>
+            Explorá nuestras lineas
+          </h1>
           <div className='grid grid-cols-3 gap-4'>{renderProductLines()}</div>
         </div>
       </div>
